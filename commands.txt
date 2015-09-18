@@ -1,0 +1,8 @@
+echo Ayush is testing     the code     for  echo    
+dir /Users/ayushyadav/
+cd  /users/ayushyadav/
+environ
+help
+echo Testing    Complete
+cd
+quit

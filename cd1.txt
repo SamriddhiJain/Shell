@@ -1,0 +1,18 @@
+cd <directory>: Stands for 'change directory' to the directory specified. If no directory is specified 
+	e.g. 'cd' by itself, then cd will return the current working directory path instead of
+	changing the directory. If the directory specified does not exist, an error message
+	will be presented to the user.
+					
+	NOTE: cd will change the environment paths, specifically the PWD environment variable. 
+	This is described in more detail in the ENVIRONMENT section.
+					
+	Command formats: 
+	cd : returns current working path
+	cd <directory> : changes current working directory to directory specified. Returns error
+	if directory does not exists. 
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************
+
+	

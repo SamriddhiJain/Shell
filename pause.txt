@@ -1,0 +1,7 @@
+pause : pauses the operation of myshell until 'enter' is pressed
+	Command Format:
+	pause  : this command pauses th eoperation of the shell till a <ENTER> is pressed by the user
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************

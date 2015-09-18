@@ -1,0 +1,10 @@
+environ : environ command lists all the environment strings. This includes special environment strings
+		shell and parent. More information in the ENVIRONMENT section. It takes no arguments and supports
+		output redirection.
+	
+		Command format example:
+		environ : environment string variables printed out on command prompt.
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************

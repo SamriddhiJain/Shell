@@ -1,0 +1,87 @@
+NAME
+	myshell - a simple shell with its own internal commands for the CS 307 assignment #2
+	
+SYNOPSIS
+	myshell [batch_file]
+	
+DESCRIPTION
+	myshell is a simple shell implementation with support for cd, clr, dir, environ, echo, help, pause
+	and quit commands as well as basic input and output redirection. It includes a command line for 
+	entering single commands with their appropriate arguments as well as support for a file with a list 
+	of commands (batchfile) to be called when myshell is first ran. This manual describes the implementation
+	of these commands, how they work and what they do.
+	
+
+
+
+COMMANDS 
+
+	cd <directory>: Stands for 'change directory' to the directory specified. If no directory is specified 
+					e.g. 'cd' by itself, then cd will return the current working directory path instead of
+					changing the directory. If the directory specified does not exist, an error message
+					will be presented to the user.
+					
+					NOTE: cd will change the environment paths, specifically the PWD environment variable. 
+					This is described in more detail in the ENVIRONMENT section.
+					
+					Command formats: 
+					cd : returns current working path
+					cd <directory> : changes current working directory to directory specified. Returns error
+					if directory does not exists. 
+	
+	clr : Clears the screen of all text, so that only the prompt is visible. 
+					Command formats:
+					clr : clear command takes in no arguments 
+		
+		
+	dir <directory> : Stands for 'directory' and lists the contents of the directory specified. 
+					contents are listed as one in each line. The same as calling 'ls -la' command in other shells.
+	
+					Command formats examples:
+					dir : Contents of current directory are listed.
+					dir <directory> : contents of specified directory are listed.
+		
+	
+	environ : environ command lists all the environment strings. This includes special environment strings
+					shell and parent. More information in the ENVIRONMENT section. It takes no arguments and supports
+					output redirection.
+	
+					Command format example:
+					environ : environment string variables printed out on command prompt.
+		
+
+	echo <comment> : echo command prints out the text inputted after the echo command, followed by a newline character. 
+					Command format examples:
+					echo hi there : print out "hi there" on the command line
+		
+	
+	help : displays the user manual  to display contents in readable blocks explaining various usage of the commands in myshell.
+	
+	
+	pause : pauses the operation of myshell until 'enter' is pressed 
+	
+
+	quit : quit closes the shell as ctrl-c (SIGINT) kill signal is caught by myshell 
+		
+	
+
+
+ENVIRONMENT: 
+
+	The environment is an array of character pointers specifying the string variables relating to the
+	current working environment of myshell. Environment variables hold information like the location 
+	of the myshell program and path of current working directory. myshell inherits all the processes 
+	from which it was invoked. However it does specify the following environment variables. 
+	
+	parent : parent path variable is the shell variable inherited by all child processes after forking. 
+	
+	shell : is the full path for the myshell executable. I.e. not a hardwired path but the one from which
+	it was executed.
+	
+	PWD : stands for present working directory, which is changed upon each successful directory change.
+
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************
+

@@ -1,0 +1,7 @@
+quit : quit closes the shell as ctrl-c (SIGINT) kill signal is caught by myshell
+	Command Format:
+	quit : this command quits the shell and returns back to the bash terminal of the system
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************

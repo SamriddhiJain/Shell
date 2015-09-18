@@ -1,0 +1,7 @@
+clr : Clears the screen of all text, so that only the prompt is visible. 
+		Command format:
+		clr : clear command takes in no arguments and just clears the terminal screen	
+		
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************

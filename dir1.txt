@@ -1,0 +1,9 @@
+dir <directory> : Stands for 'directory' and lists the contents of the directory specified. 
+	contents are listed as one in each line. The same as calling 'ls -la' command in other shells.
+	
+	Command formats :
+	dir <directory> : contents of specified directory are listed.		
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************

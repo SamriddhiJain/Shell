@@ -1,0 +1,8 @@
+echo <comment> : echo command prints out the text inputted after the echo command, followed by a newline character. 
+	Command format examples:
+	echo hi there : print out "hi there" on the command line
+					removes the multiple spaces and tab spaces fromt the echo value stream
+	
+***************************************************************************************************************
+-----------Manual for myshell, last updated 4th of September, 2015 by Ayush Yadav and Samriddhi Jain.---------- 
+***************************************************************************************************************
